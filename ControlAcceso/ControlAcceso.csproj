@@ -1,0 +1,337 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{1F77839A-B9C2-4E1A-9D7D-4A05195872CA}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>ControlAcceso</RootNamespace>
+    <AssemblyName>ControlAcceso</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <TargetFrameworkProfile />
+    <PublishUrl>C:\Documents and Settings\ocorrales\Escritorio\ObradoresInstall\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>1</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <PublishWizardCompleted>true</PublishWizardCompleted>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>ico-acceso.ico</ApplicationIcon>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ManifestCertificateThumbprint>27CD9054AE5C6A9DABB46398D03D51484D44851D</ManifestCertificateThumbprint>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ManifestKeyFile>Cifrado_TemporaryKey.pfx</ManifestKeyFile>
+  </PropertyGroup>
+  <PropertyGroup>
+    <GenerateManifests>true</GenerateManifests>
+  </PropertyGroup>
+  <PropertyGroup>
+    <SignManifests>true</SignManifests>
+  </PropertyGroup>
+  <PropertyGroup>
+    <NoWin32Manifest>true</NoWin32Manifest>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.VisualBasic" />
+    <Reference Include="Newtonsoft.Json, Version=7.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
+      <HintPath>lib\Newtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.DirectoryServices" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="CCryptorEngine.cs" />
+    <Compile Include="Config.cs" />
+    <Compile Include="DataBase.cs" />
+    <Compile Include="Edificio.cs" />
+    <Compile Include="frmActualizarDotacion.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmActualizarDotacion.Designer.cs">
+      <DependentUpon>frmActualizarDotacion.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmEdificios.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmEdificios.Designer.cs">
+      <DependentUpon>frmEdificios.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmLogSincro.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmLogSincro.Designer.cs">
+      <DependentUpon>frmLogSincro.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmLoteControlAcceso.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmLoteControlAcceso.Designer.cs">
+      <DependentUpon>frmLoteControlAcceso.cs</DependentUpon>
+    </Compile>
+    <Compile Include="LoteDetalleError.cs" />
+    <Compile Include="LoteResponse.cs" />
+    <Compile Include="ServiceLayer.cs" />
+    <Compile Include="ServiceLayerException.cs" />
+    <Compile Include="Dotacion.cs" />
+    <Compile Include="frmEncriptacion.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmEncriptacion.Designer.cs">
+      <DependentUpon>frmEncriptacion.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Http.cs" />
+    <Compile Include="frmInformarNovedades.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmInformarNovedades.Designer.cs">
+      <DependentUpon>frmInformarNovedades.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmLogin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmLogin.Designer.cs">
+      <DependentUpon>frmLogin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="LoteControlAcceso.cs" />
+    <Compile Include="frmMenu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmMenu.Designer.cs">
+      <DependentUpon>frmMenu.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Persona.cs" />
+    <Compile Include="frmConfirmacion.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmConfirmacion.Designer.cs">
+      <DependentUpon>frmConfirmacion.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="frmRegistrarAcceso.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmRegistrarAcceso.Designer.cs">
+      <DependentUpon>frmRegistrarAcceso.cs</DependentUpon>
+    </Compile>
+    <Compile Include="RegistroControlAcceso.cs" />
+    <Compile Include="ServiceLayerExceptionLogin.cs" />
+    <Compile Include="ServiceResponse.cs" />
+    <Compile Include="frmSolicitudCredencialesWeb.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmSolicitudCredencialesWeb.Designer.cs">
+      <DependentUpon>frmSolicitudCredencialesWeb.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Seguridad.cs" />
+    <Compile Include="SincronizarInfo.cs" />
+    <EmbeddedResource Include="frmActualizarDotacion.resx">
+      <DependentUpon>frmActualizarDotacion.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmEdificios.resx">
+      <DependentUpon>frmEdificios.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmEncriptacion.resx">
+      <DependentUpon>frmEncriptacion.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmInformarNovedades.resx">
+      <DependentUpon>frmInformarNovedades.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmLogin.resx">
+      <DependentUpon>frmLogin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmLogSincro.resx">
+      <DependentUpon>frmLogSincro.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmLoteControlAcceso.resx">
+      <DependentUpon>frmLoteControlAcceso.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmMenu.resx">
+      <DependentUpon>frmMenu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmConfirmacion.resx">
+      <DependentUpon>frmConfirmacion.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <EmbeddedResource Include="frmRegistrarAcceso.resx">
+      <DependentUpon>frmRegistrarAcceso.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmSolicitudCredencialesWeb.resx">
+      <DependentUpon>frmSolicitudCredencialesWeb.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="app.config" />
+    <None Include="Cifrado_TemporaryKey.pfx" />
+    <None Include="DB\dotacion.dat" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Aceptar.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Cancelar.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Consultar_32_32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\fondo_MDI.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ToolbarDegradeMdi_H.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Symbol-Check.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Symbol-Exclamation.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\man_key.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="config.mdb">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="DB\dotacion.mdb">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="ico-acceso.ico" />
+    <Content Include="Informes\info.mdb">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <None Include="Resources\logo-mds.png" />
+    <None Include="Resources\logo-mds_2.png" />
+    <None Include="Resources\sigirh.png" />
+    <Content Include="Templates\templateAsistencia.mdb">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <None Include="Resources\prist.jpg" />
+    <None Include="Resources\descarga.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include="Microsoft.Net.Client.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1 Client Profile</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Windows.Installer.3.1">
+      <Visible>False</Visible>
+      <ProductName>Windows Installer 3.1</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <PublishFile Include="config.mdb">
+      <Visible>False</Visible>
+      <PublishState>Include</PublishState>
+      <IncludeHash>True</IncludeHash>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <FileType>File</FileType>
+    </PublishFile>
+    <PublishFile Include="ico-acceso.ico">
+      <Visible>False</Visible>
+      <PublishState>Include</PublishState>
+      <IncludeHash>True</IncludeHash>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <FileType>File</FileType>
+    </PublishFile>
+    <PublishFile Include="Informes\info.mdb">
+      <Visible>False</Visible>
+      <PublishState>Include</PublishState>
+      <IncludeHash>True</IncludeHash>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <FileType>File</FileType>
+    </PublishFile>
+    <PublishFile Include="Templates\templateAsistencia.mdb">
+      <Visible>False</Visible>
+      <PublishState>Include</PublishState>
+      <IncludeHash>True</IncludeHash>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <FileType>File</FileType>
+    </PublishFile>
+  </ItemGroup>
+  <ItemGroup />
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

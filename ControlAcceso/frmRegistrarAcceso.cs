@@ -23,6 +23,7 @@ namespace ControlAcceso
             if (!this.Dot.Recuperar_Dotacion_JS())
             {
                 MessageBox.Show(this, "Se produjo un error al intentar obtener la dotación.\n\nDescripción del error:\n" + this.Dot.error_desc + "\n\nIntente actualizar nuevamente la dotación.", "Atención:", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
+                this.Close();
             }
 
         }

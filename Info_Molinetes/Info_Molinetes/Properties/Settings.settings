@@ -1,0 +1,12 @@
+﻿<?xml version='1.0' encoding='utf-8'?>
+<SettingsFile xmlns="http://schemas.microsoft.com/VisualStudio/2004/01/settings" CurrentProfile="(Default)" GeneratedClassNamespace="Info_Molinetes.Properties" GeneratedClassName="Settings">
+  <Profiles />
+  <Settings>
+    <Setting Name="DB_Molinetes" Type="System.String" Scope="User">
+      <Value Profile="(Default)">ZWJvmSpahNsPDvTNi2A77Le9CP+gBBkT1854esO1BA511z1xNAqDta5zOkEqpne485ugAVcGVvVsotuSmm5NZobBDOobbQYGy0wdAbHR+Lfa+ZUG3s2VSE5Cann1/crddcnYP9FQr7PlwgIQd0J1pQ==</Value>
+    </Setting>
+    <Setting Name="DB_RRHH" Type="System.String" Scope="User">
+      <Value Profile="(Default)">Yk5PfJfZjABUwrFs8TCjI2duQ9Q+nBY3T3NowblfVSgNIAuEysxcQlxYwtYWSdEp4qTJp6gOUqrigh3DA7z/rg==</Value>
+    </Setting>
+  </Settings>
+</SettingsFile>

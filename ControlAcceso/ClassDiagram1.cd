@@ -1,0 +1,220 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="ControlAcceso.CCryptorEngine" Collapsed="true">
+    <Position X="3" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AQAAAAAAAAAAAAAAAAAEAAAAAACAAAAAAAgAAAAAAAA=</HashCode>
+      <FileName>CCryptorEngine.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ControlAcceso.Config" Collapsed="true">
+    <Position X="4.75" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAIAAAAAAAQAAAAAAAAAgAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Config.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ControlAcceso.DataBase" Collapsed="true">
+    <Position X="6.5" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AACBAAAAAEAAABgAQAggAQAAAIAAQAAAAICEABAgAAA=</HashCode>
+      <FileName>DataBase.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ControlAcceso.Dotacion" Collapsed="true">
+    <Position X="8.25" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>EAAAAAAIAAAAAAAABAAAAAAAAAAAABAAAAAAAQAhAAA=</HashCode>
+      <FileName>Dotacion.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ControlAcceso.Edificio" Collapsed="true">
+    <Position X="10" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAACAABAAAABQAKAAAACAAAQAACAgAAAAAAgg=</HashCode>
+      <FileName>Edificio.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ControlAcceso.frmActualizarDotacion" Collapsed="true">
+    <Position X="11.75" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAACAAAAAAAgiAAAACAQAAAAAAAAAAAQAAAgA=</HashCode>
+      <FileName>frmActualizarDotacion.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ControlAcceso.frmConfirmacion" Collapsed="true">
+    <Position X="3" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAgAAAACACEJwABICQIoAiAIBACFAAACAgAAAAAAA=</HashCode>
+      <FileName>frmConfirmacion.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ControlAcceso.frmEdificios" Collapsed="true">
+    <Position X="4.75" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAACAABBAAACCAAAICACCAACASACAgACAAAgA=</HashCode>
+      <FileName>frmEdificios.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ControlAcceso.frmEncriptacion" Collapsed="true">
+    <Position X="6.5" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAACABAAACIAABAAAACAAAACAAA4AAAAAHAAAAAEAAA=</HashCode>
+      <FileName>frmEncriptacion.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ControlAcceso.frmInformarNovedades" Collapsed="true">
+    <Position X="8.25" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>QAAAAAQAACAAAAIBAADMDAACAQAAABSQAEAAAAQhAAE=</HashCode>
+      <FileName>frmInformarNovedades.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ControlAcceso.frmLogin" Collapsed="true">
+    <Position X="10" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>gECAABFAQCEEAAwAgBCAAAACAgQACAUAAAgAAADAAAA=</HashCode>
+      <FileName>frmLogin.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ControlAcceso.frmLogSincro" Collapsed="true">
+    <Position X="11.75" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AACAAAAAAKAAAAAAAAiAIAACAACAAEAIAAQAAAAAgAA=</HashCode>
+      <FileName>frmLogSincro.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ControlAcceso.frmLoteControlAcceso" Collapsed="true">
+    <Position X="3" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAGACAAAAAAAACAAAACCQAACAAEAAAAAACQAAA=</HashCode>
+      <FileName>frmLoteControlAcceso.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ControlAcceso.frmMenu" Collapsed="true">
+    <Position X="4.75" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AQAAgQkBECgJMBgAALCCAAIKAGBAAIAAASSQAACAAgE=</HashCode>
+      <FileName>frmMenu.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ControlAcceso.frmRegistrarAcceso" Collapsed="true">
+    <Position X="6.5" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>ABAAAQAAACAAAAAAAACAACACCAAAAAAQACBAAAAAAAE=</HashCode>
+      <FileName>frmRegistrarAcceso.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ControlAcceso.frmSolicitudCredencialesWeb" Collapsed="true">
+    <Position X="8.25" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AECAABBAACEEAAxAgBCAAAACAgACAAQAAAAAAACAAAA=</HashCode>
+      <FileName>frmSolicitudCredencialesWeb.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ControlAcceso.Http" Collapsed="true">
+    <Position X="10" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAABAAAAAAAAAAAAAAAACAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Http.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ControlAcceso.LoteControlAcceso" Collapsed="true">
+    <Position X="11.75" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAADABAAAIAA4AAQAgaAkAIAEAAAAABAAAAAAAEgA=</HashCode>
+      <FileName>LoteControlAcceso.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ControlAcceso.LoteDetalleError" Collapsed="true">
+    <Position X="3" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAQAAAAAAAAAAAAAAAAAAIAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>LoteDetalleError.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ControlAcceso.LoteResponse" Collapsed="true">
+    <Position X="4.75" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAIAAAAAAAAAAAAAAAAAAAAAAAAgAAAAAAAA=</HashCode>
+      <FileName>LoteResponse.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ControlAcceso.Persona" Collapsed="true">
+    <Position X="6.5" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>BAAIACEAAiAAAAAAAEAIIAAAAAAAAAAAACQAAAAAAgA=</HashCode>
+      <FileName>Persona.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ControlAcceso.Program" Collapsed="true">
+    <Position X="8.25" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABAAAAAA=</HashCode>
+      <FileName>Program.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ControlAcceso.RegistroControlAcceso" Collapsed="true">
+    <Position X="10" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>ACAAAEEKAQAAAAAAIAAAABAAAAACBAAABAwAAAAAAgA=</HashCode>
+      <FileName>RegistroControlAcceso.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ControlAcceso.Seguridad" Collapsed="true">
+    <Position X="3" Y="4.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AABAAAAEAIApQAAQAAAAAAAAAABRAAAQAEAAAAAAAAA=</HashCode>
+      <FileName>Seguridad.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ControlAcceso.ServiceLayer" Collapsed="true">
+    <Position X="4.75" Y="4.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAUAgAAIAAAAAAAAIAAECAAACAAIQAAAAAAABBAAA=</HashCode>
+      <FileName>ServiceLayer.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ControlAcceso.ServiceLayerException" Collapsed="true">
+    <Position X="0.5" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>ServiceLayerException.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ControlAcceso.ServiceLayerExceptionLogin" Collapsed="true">
+    <Position X="0.5" Y="2" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>ServiceLayerExceptionLogin.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ControlAcceso.ServiceResponse" Collapsed="true">
+    <Position X="6.5" Y="4.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAEAAgAAAAAQAABAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>ServiceResponse.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ControlAcceso.SincronizarInfo" Collapsed="true">
+    <Position X="10" Y="4.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AhAAAAAAABAABggCQAAABAABAACAAAAFiAAAIAAJgBk=</HashCode>
+      <FileName>SincronizarInfo.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ControlAcceso.Properties.Resources" Collapsed="true">
+    <Position X="11.75" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AYAAAAAAAAAAAAAAwAChEAAAAQABIAAAAAAEIAAAIYA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ControlAcceso.Properties.Settings" Collapsed="true">
+    <Position X="8.25" Y="4.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAEAAAAIAAAAAABAAAAAAAAAABACAA=</HashCode>
+      <FileName>Settings.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Font Name="Tahoma" Size="8.25" />
+</ClassDiagram>

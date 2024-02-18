@@ -84,12 +84,14 @@ namespace ControlAcceso
                 txtBitcora.Text = string.Empty;
                 btnInformar.Enabled = false;
                 var lst_lotes = Cargar_Lotes_No_Informados();
+                var descecp = "";
                 foreach (LoteControlAcceso lote in lst_lotes)
                 {
                     try
                     {
                         var serv = new ServiceLayer();
                         var lote_resp = serv.Informar_Lote(lote);
+                        descecp = lote_resp.resultado + " - " + lote_resp.detalle;
                         Procesar_Respuesta_Lote(lote, lote_resp);
                         if ( Marcar_Registros_Informados(lote, lote_resp) )
                         {
@@ -97,9 +99,11 @@ namespace ControlAcceso
                             this.Refresh();
                         }
                     }
-                    catch
+                    catch (Exception  exp)
                     {
-                        txtBitcora.Text += "Se produjo un error al intentar informar el lote " + lote.id + " (Error 5)." + System.Environment.NewLine;
+                        //txtBitcora.Text += "Se produjo un error al intentar informar el lote " + lote.id + " (Error 5)." + System.Environment.NewLine;
+                        txtBitcora.Text += "Excepcion: " + exp.Message + " Origen:" + exp.Source + " Metodo: " + exp.TargetSite + " WS-Result: " + descecp + System.Environment.NewLine;
+                        
                         this.Refresh();
                     }
 
